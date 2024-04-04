@@ -1,5 +1,9 @@
-import Image from "next/image";
+"use client";
 
 export default function Home() {
-  return <div>hello</div>;
+  const hello = (ami: string) => {
+    console.log(ami);
+  };
+
+  return <div onClick={() => hello('hello')}>hello</div>;
 }
